@@ -60,7 +60,7 @@
 /* Optional: Style for the status text */
 .status-modal p {
     font-size: 15px;
-    color: #333;
+    color: whitesmoke;
     margin: 0;
     animation: fadeInText 0.8s ease-out, bounceText 1s ease-in-out infinite;
     font-weight: 500;
@@ -167,3 +167,46 @@
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.error {
+    border: 2px solid red !important;
+  }
+  
+  .success {
+    border: 2px solid green !important;
+  }
+  
+  .errorText {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+  }
+  
+  
+  .status-modal {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .timer-line {
+    height: 4px;
+    background: #fff;
+    animation: timer 12s linear forwards;
+  }
+  
+  @keyframes timer {
+    from {
+      width: 100%;
+    }
+    to {
+      width: 0%;
+    }
+  }
+  

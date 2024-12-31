@@ -192,7 +192,8 @@
 
     .form-clt {
       input,
-      textarea {
+      textarea,
+      select {
         padding: 20px;
         line-height: 1;
         outline: none;
@@ -200,18 +201,27 @@
         border: 1px solid $border-color;
         border-radius: 8px;
         background-color: transparent;
-        color: $text-color;
+        color: whitesmoke;
         font-weight: 500;
-
+        transition: all 0.3s ease; /* Smooth transitions for focus effects */
+      
         &::placeholder {
-          color: $text-color;
+          color: whitesmoke;
+        }
+      
+        &:focus {
+          border-color: $primary-color; /* Change border color on focus */
+          background-color: #fff; /* Add a white background */
+          box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Optional subtle glow */
+          color:#4f536c; /* Change text color on focus */
         }
       }
-
+      
       textarea {
         padding-bottom: 110px;
       }
-
+      
+      
       .category-oneadjust {
         background-color: transparent;
         border: 1px solid $border-color;
